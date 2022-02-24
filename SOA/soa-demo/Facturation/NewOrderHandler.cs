@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using Message;
 using NServiceBus;
@@ -10,10 +11,16 @@ namespace Facturation
         private ILog _logger = LogManager.GetLogger<NewOrderHandler>();
         public Task Handle(NewOrder message, IMessageHandlerContext context)
         {
+            Random r = new Random();
             _logger.Info($"{message.Id}, total {message.Total} euros");
             message.GetNumberProducts(UsingStock);
-            message.ToExecute();
-            return Task.CompletedTask;
+            InvoiceReady invoice = new InvoiceReady()
+            {
+                Id = r.Next(1000),
+                Message = Guid.NewGuid().ToString()
+            };
+            //message.RunEvent();
+            return context.Send(invoice);
         }
 
         private void UsingStock(int stock)

@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message", "Message\Message.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facturation", "Facturation\Facturation.csproj", "{FEBA6BB9-9F7F-42BC-8586-238DAEC0E2FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistique", "Logistique\Logistique.csproj", "{20FFC145-1511-4CFF-BA3D-FB7FCFA368D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{FEBA6BB9-9F7F-42BC-8586-238DAEC0E2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEBA6BB9-9F7F-42BC-8586-238DAEC0E2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEBA6BB9-9F7F-42BC-8586-238DAEC0E2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20FFC145-1511-4CFF-BA3D-FB7FCFA368D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20FFC145-1511-4CFF-BA3D-FB7FCFA368D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20FFC145-1511-4CFF-BA3D-FB7FCFA368D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20FFC145-1511-4CFF-BA3D-FB7FCFA368D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

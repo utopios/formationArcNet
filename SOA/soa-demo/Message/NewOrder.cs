@@ -9,7 +9,7 @@ namespace Message
     {
         private int id;
         private decimal total;
-        public Action ToExecute { get; set; }
+        //public event Action ToExecute;
         
         public decimal Total
         {
@@ -28,6 +28,11 @@ namespace Message
         {
             Random r = new Random();
             ActionNumberProducts(r.Next(1000));
+        }
+
+        public void RunEvent()
+        {
+            //ToExecute?.Invoke();
         }
     }
 }
