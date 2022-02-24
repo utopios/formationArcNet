@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "soa-demo", "soa-demo\soa-demo.csproj", "{6FA71D3D-76C9-4393-B4E8-BD3C928503DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message", "Message\Message.csproj", "{F9EA6D29-3CD8-4721-958F-3AD184448E61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facturation", "Facturation\Facturation.csproj", "{FEBA6BB9-9F7F-42BC-8586-238DAEC0E2FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FA71D3D-76C9-4393-B4E8-BD3C928503DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA71D3D-76C9-4393-B4E8-BD3C928503DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA71D3D-76C9-4393-B4E8-BD3C928503DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA71D3D-76C9-4393-B4E8-BD3C928503DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9EA6D29-3CD8-4721-958F-3AD184448E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9EA6D29-3CD8-4721-958F-3AD184448E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9EA6D29-3CD8-4721-958F-3AD184448E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9EA6D29-3CD8-4721-958F-3AD184448E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEBA6BB9-9F7F-42BC-8586-238DAEC0E2FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBA6BB9-9F7F-42BC-8586-238DAEC0E2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBA6BB9-9F7F-42BC-8586-238DAEC0E2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBA6BB9-9F7F-42BC-8586-238DAEC0E2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
