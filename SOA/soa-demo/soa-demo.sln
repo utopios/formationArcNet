@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facturation", "Facturation\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistique", "Logistique\Logistique.csproj", "{20FFC145-1511-4CFF-BA3D-FB7FCFA368D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorImplementationCRM", "MediatorImplementationCRM\MediatorImplementationCRM.csproj", "{5A5CB685-98A5-48B2-88D4-799574F5773F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{20FFC145-1511-4CFF-BA3D-FB7FCFA368D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20FFC145-1511-4CFF-BA3D-FB7FCFA368D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20FFC145-1511-4CFF-BA3D-FB7FCFA368D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A5CB685-98A5-48B2-88D4-799574F5773F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5CB685-98A5-48B2-88D4-799574F5773F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5CB685-98A5-48B2-88D4-799574F5773F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5CB685-98A5-48B2-88D4-799574F5773F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
