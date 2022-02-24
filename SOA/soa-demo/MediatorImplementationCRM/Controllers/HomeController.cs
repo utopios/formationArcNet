@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using MediatorImplementationCRM.Handlers.Commands;
+using MediatorImplementationCRM.Handlers.Queries;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MediatorImplementationCRM.Models;
@@ -27,9 +28,9 @@ namespace MediatorImplementationCRM.Controllers
             return View();
         }
 
-        public IActionResult NewCustomer()
+        public async Task<IActionResult> NewCustomer()
         {
-            _mediator.Send(new NewCustomerCommand()
+             Customer customer = await _mediator.Send(new NewCustomerCommand()
             {
                 Customer = new Customer()
                 {
@@ -39,6 +40,15 @@ namespace MediatorImplementationCRM.Controllers
                 }
             });
             return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> GetCustomers()
+        {
+            List<Customer> customers = await _mediator.Send(new GetCustomersQuery()
+            {
+                Name = "toto"
+            });
+            return View("Index");
         }
         public IActionResult Privacy()
         {

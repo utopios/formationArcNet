@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using MediatorImplementationCRM.Models;
 
 namespace MediatorImplementationCRM.Repositories
@@ -7,6 +9,11 @@ namespace MediatorImplementationCRM.Repositories
         public Customer Create(Customer element)
         {
             throw new System.NotImplementedException();
+        }
+
+        public List<Customer> FindAllBy(Func<Customer, bool> Search)
+        {
+            throw new NotImplementedException();
         }
     }
 }
