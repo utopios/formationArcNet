@@ -54,6 +54,8 @@ services:
 
   ocelotapigw:
     image: ${DOCKER_REGISTRY-}ocelotapigw
+    ports:
+      - "10000:80"
     build:
       context: .
       dockerfile: ApiGateways/OcelotApiGw/Dockerfile  
