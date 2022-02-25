@@ -1,0 +1,42 @@
+{
+  "Routes": [
+    //Catalog
+    {
+      "DownstreamPathTemplate": "/api/v1/catalog",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8000"
+        }
+      ],
+      "UpstreamPathTemplate": "/catalog",
+      "UpstreamHttpMethod": ["GET","POST"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/catalog/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8000"
+        }
+      ],
+      "UpstreamPathTemplate": "/catalog/{id}",
+      "UpstreamHttpMethod": ["GET","PUT","DELETE","PATCH"]
+    },
+    //Baket
+    {
+      "DownstreamPathTemplate": "/api/v1/basket/{customerId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8001"
+        }
+      ],
+      "UpstreamPathTemplate": "/basket/{customerId}",
+      "UpstreamHttpMethod": ["GET","DELETE"]
+    }
+  ]
+}
